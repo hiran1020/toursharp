@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "name": "Adventure in the Swiss Alps",
+    "location": "Switzerland",
+    "duration": "4 days 3 Night",
+    "price": "799",
+    "description": "Explore the beauty of the Swiss Alps with guided tours and outdoor activities.",
+    "image": "https://via.placeholder.com/300x200?text=Swiss+Alps",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Zurich, transfer to the Alps" },
+      { "day": 2, "activity": "Guided hike in the Alps" },
+      { "day": 3, "activity": "Visit to local mountain villages" },
+      { "day": 4, "activity": "Return to Zurich, departure" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Beach Paradise in Bali",
+    "location": "Bali",
+    "duration": "3 days 2 Nights",
+    "price": "499",
+    "description": "Relax on the stunning beaches of Bali with luxurious resorts and activities.",
+    "image": "https://via.placeholder.com/300x200?text=Bali+Beach",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Bali, check-in to resort" },
+      { "day": 2, "activity": "Beach relaxation and water sports" },
+      { "day": 3, "activity": "Cultural tour of Bali temples" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cultural Tour of Japan",
+    "location": "Japan",
+    "duration": "4 days 3 Nights",
+    "price": "1200",
+    "description": "Experience the rich culture and history of Japan with guided tours of Tokyo, Kyoto, and Osaka.",
+    "image": "https://via.placeholder.com/300x200?text=Japan+Culture",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Tokyo, city tour" },
+      { "day": 2, "activity": "Visit to historical sites in Kyoto" },
+      { "day": 3, "activity": "Exploration of Osaka markets" },
+      { "day": 4, "activity": "Return to Tokyo, departure" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Safari Adventure in Kenya",
+    "location": "Kenya",
+    "duration": "3 days 2 Nights",
+    "price": "950",
+    "description": "Discover the wildlife of Kenya on a safari adventure through national parks.",
+    "image": "https://via.placeholder.com/300x200?text=Kenya+Safari",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Nairobi, transfer to Maasai Mara" },
+      { "day": 2, "activity": "Full-day safari in Maasai Mara" },
+      { "day": 3, "activity": "Visit to local Maasai village" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Romantic Getaway in Paris",
+    "location": "Paris",
+    "duration": "3 days 2 Nights",
+    "price": "1100",
+    "description": "Enjoy a romantic vacation in the city of love with guided tours of iconic Paris landmarks.",
+    "image": "https://via.placeholder.com/300x200?text=Paris+Romantic",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Paris, Eiffel Tower tour" },
+      { "day": 2, "activity": "Visit to Louvre and Seine River cruise" },
+      { "day": 3, "activity": "Day trip to Versailles" },
+      { "day": 4, "activity": "Free day for personal exploration" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Amazon Rainforest Expedition",
+    "location": "Amazon",
+    "duration": "3 days 2 Nights",
+    "price": "1350",
+    "description": "Embark on a thrilling adventure through the heart of the Amazon rainforest.",
+    "image": "https://via.placeholder.com/300x200?text=Amazon+Rainforest",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Manaus, transfer to the Amazon" },
+      { "day": 2, "activity": "Guided tour of the rainforest" },
+      { "day": 3, "activity": "Canoeing and wildlife observation" },
+      { "day": 4, "activity": "Return to Manaus, departure" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Northern Lights in Iceland",
+    "location": "Iceland",
+    "duration": "5 days 4 Nights",
+    "price": "1250",
+    "description": "Witness the magical Northern Lights in Iceland with guided tours of the stunning landscape.",
+    "image": "https://via.placeholder.com/300x200?text=Iceland+Northern+Lights",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Reykjavik, city exploration" },
+      { "day": 2, "activity": "Northern Lights viewing tour" },
+      { "day": 3, "activity": "Visit to Blue Lagoon and Golden Circle" },
+      { "day": 4, "activity": "Departure from Reykjavik" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Historical Tour of Rome",
+    "location": "Rome",
+    "duration": "3 days 2 Nights",
+    "price": "999",
+    "description": "Explore the rich history of Rome with guided tours of ancient ruins and monuments.",
+    "image": "https://via.placeholder.com/300x200?text=Rome+Historical",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Rome, Colosseum and Roman Forum tour" },
+      { "day": 2, "activity": "Visit to Vatican City and St. Peter's Basilica" },
+      { "day": 3, "activity": "Day trip to Pompeii" },
+      { "day": 4, "activity": "Free day for shopping and personal exploration" }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Cultural Tour of Egypt",
+    "location": "Egypt",
+    "duration": "4 days 3 Nights",
+    "price": "1500",
+    "description": "Immerse yourself in the rich history and culture of Egypt with guided tours of ancient ruins.",
+    "image": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Cairo, tour of the Egyptian Museum" },
+      { "day": 2, "activity": "Visit to the Sphinx and the Pyramids" },
+      { "day": 3, "activity": "Guided tour of the Egyptian Museum" },
+      { "day": 4, "activity": "Return to Cairo, departure" }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Safari Adventure in Kenya",
+    "location": "Kenya",
+    "duration": "3 days 2 Nights",
+    "price": "950",
+    "description": "Discover the wildlife of Kenya on a safari adventure through national parks.",
+    "image": "https://via.placeholder.com/300x200?text=Kenya+Safari",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Nairobi, transfer to Maasai Mara" },
+      { "day": 2, "activity": "Full-day safari in Maasai Mara" },
+      { "day": 3, "activity": "Visit to local Maasai village" }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Romantic Getaway in Paris",
+    "location": "Paris",
+    "duration": "3 days 2 Nights",
+    "price": "1100",
+    "description": "Enjoy a romantic vacation in the city of love with guided tours of iconic Paris landmarks.",
+    "image": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Paris, Eiffel Tower tour" },
+      { "day": 2, "activity": "Visit to Louvre and Seine River cruise" },
+      { "day": 3, "activity": "Day trip to Versailles" },
+      { "day": 4, "activity": "Free day for personal exploration" }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Amazon Rainforest Expedition",
+    "location": "Amazon",
+    "duration": "3 days 2 Nights",
+    "price": "1350",
+    "description": "Embark on a thrilling adventure through the heart of the Amazon rainforest.",
+    "image": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Manaus, transfer to the Amazon" },
+      { "day": 2, "activity": "Guided tour of the rainforest" },
+      { "day": 3, "activity": "Canoeing and wildlife observation" },
+      { "day": 4, "activity": "Return to Manaus, departure" }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Cultural Tour of Japan",
+    "location": "Japan",
+    "duration": "4 days 3 Nights",
+    "price": "1200",
+    "description": "Experience the rich culture and history of Japan with guided tours of Tokyo, Kyoto, and Osaka.",
+    "image": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Tokyo, city tour" },
+      { "day": 2, "activity": "Visit to historical sites in Kyoto" },
+      { "day": 3, "activity": "Exploration of Osaka markets" },
+      { "day": 4, "activity": "Return to Tokyo, departure" }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Safari Adventure in Kenya",
+    "location": "Kenya",
+    "duration": "3 days 2 Nights",
+    "price": "950",
+    "description": "Discover the wildlife of Kenya on a safari adventure through national parks.",
+    "image": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Nairobi, transfer to Maasai Mara" },
+      { "day": 2, "activity": "Full-day safari in Maasai Mara" },
+      { "day": 3, "activity": "Visit to local Maasai village" }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Cultural Tour of Japan",
+    "location": "Japan",
+    "duration": "4 days 3 Nights",
+    "price": "1200",
+    "description": "Experience the rich culture and history of Japan with guided tours of Tokyo, Kyoto, and Osaka.",
+    "image": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "itinerary": [
+      { "day": 1, "activity": "Arrival in Tokyo, city tour" },
+      { "day": 2, "activity": "Visit to historical sites in Kyoto" },
+      { "day": 3, "activity": "Exploration of Osaka markets" },
+      { "day": 4, "activity": "Return to Tokyo, departure" }
+    ]
+  }
+
+]

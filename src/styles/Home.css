@@ -1,0 +1,36 @@
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home h1 {
+    font-size: 2rem;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+  }
+  
+  .autocomplete-search {
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .autocomplete-search input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .autocomplete-search ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .autocomplete-search li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
