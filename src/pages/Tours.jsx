@@ -11,26 +11,27 @@ const Tours = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [hoveredTourId, setHoveredTourId] = useState(null);
+  
+  // Collect tour names from filtered tours
   const tourNames = filteredTours.map(tour => tour.name);
-  const { imagesMap, videosMap, loading: imagesLoading, error: fetchError } = useFetchImages(tourNames);
+  const tourPlaces = filteredTours.map(tour => tour.place_to_visit[0]);
+  
+  // Use the custom hook to fetch images and videos
+  const { imagesMap, hoveredVideo, loading: imagesLoading, error: fetchError, handleTourHover } = useFetchImages(tourNames);
 
+  // Filter change handler
   const handleFilterChange = useCallback((filters) => {
     const { price, location, duration } = filters;
     const filtered = tours.filter((tour) => {
-      const isPriceValid = price
-        ? tour.price >= price[0] && tour.price <= price[1]
-        : true;
-      const isLocationValid = location
-        ? (tour.location ? tour.location.toLowerCase().includes(location.toLowerCase()) : false)
-        : true;
-      const isDurationValid = duration
-        ? (tour.duration ? tour.duration.toLowerCase().includes(duration.toLowerCase()) : false)
-        : true;
+      const isPriceValid = price ? tour.price >= price[0] && tour.price <= price[1] : true;
+      const isLocationValid = location ? (tour.location ? tour.location.toLowerCase().includes(location.toLowerCase()) : false) : true;
+      const isDurationValid = duration ? (tour.duration ? tour.duration.toLowerCase().includes(duration.toLowerCase()) : false) : true;
       return isPriceValid && isLocationValid && isDurationValid;
     });
     setFilteredTours(filtered);
   }, [tours]);
 
+  // Fetch tours data
   useEffect(() => {
     const fetchTours = async () => {
       try {
@@ -44,19 +45,16 @@ const Tours = () => {
         setLoading(false);
       }
     };
-
     fetchTours();
   }, []);
 
-  const getVideoUrl = (tourName) => {
-    const video = videosMap[tourName];
-    return video ? video : null;
-  };
-
-  const handleMouseEnter = (tourId) => {
+  // Handle mouse enter to start video fetching
+  const handleMouseEnter = (tourId, tourName) => {
     setHoveredTourId(tourId);
+    handleTourHover(tourName); // Trigger video fetching for hovered tour
   };
 
+  // Handle mouse leave to stop showing video
   const handleMouseLeave = () => {
     setHoveredTourId(null);
   };
@@ -68,7 +66,7 @@ const Tours = () => {
         <Spinner animation="border" />
       ) : (
         <>
-          {error && <Alert variant="danger">{error.message}</Alert>}
+          {error && <Alert variant="danger">{error}</Alert>}
           {fetchError && <Alert variant="danger">{fetchError.message}</Alert>}
           {filteredTours.length === 0 ? (
             <p>No tours match your filters.</p>
@@ -77,12 +75,12 @@ const Tours = () => {
               {filteredTours.map((tour) => (
                 <Col key={tour.id} md={4} className="mb-4">
                   <Card
-                    onMouseEnter={() => handleMouseEnter(tour.id)}
+                    onMouseEnter={() => handleMouseEnter(tour.id, tour.name)}
                     onMouseLeave={handleMouseLeave}
                   >
-                    {hoveredTourId === tour.id ? (
+                    {hoveredTourId === tour.id && hoveredVideo ? (
                       <video
-                        src={getVideoUrl(tour.name)}
+                        src={hoveredVideo}
                         autoPlay
                         muted
                         loop
@@ -116,7 +114,6 @@ const Tours = () => {
       )}
     </div>
   );
-  
 };
 
 export default Tours;
